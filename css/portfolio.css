@@ -1,0 +1,146 @@
+/* PORTFOLIO page */
+
+.conteiner-portfolio {
+  width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.filtrs-batton {
+  display: flex;
+  padding-top: 94px;
+  justify-content: center;
+}
+
+.list-portfolio {
+  margin-right: 8px;
+}
+
+.link-portfolio {
+  font-weight: 500;
+  line-height: 1.6;
+  padding: 6px 22px;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+.list-portfolio:last-child {
+  margin-right: 0;
+}
+
+/* projeck-conteiner =====++======== */
+
+.projeck-conteiner {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+.card {
+  display: block;
+  width: 370px;
+  margin-right: 30px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.card-img {
+  display: block;
+}
+
+.card-content {
+  border: 1px solid #eeeeee;
+  border-top-width: 0px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.card-content::before {
+  content: '';
+  display: block;
+  width: auto;
+  height: 294px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 370px 294px;
+}
+
+.card-content.icon-i-min::before {
+  background-image: url('../images/portfolio/a-min.jpg');
+}
+
+.card-content.icon-b-min::before {
+  background-image: url('../images/portfolio/b-min.jpg');
+}
+
+.card-content.icon-c-min::before {
+  background-image: url('../images/portfolio/c-min.jpg');
+}
+
+.card-content.icon-d-min::before {
+  background-image: url('../images/portfolio/d-min.jpg');
+}
+
+.card-content::before {
+  background-image: url('../images/portfolio/i-min.jpg');
+}
+
+.card-content.icon-f-min::before {
+  background-image: url('../images/portfolio/f-min.jpg');
+}
+
+.card-content.icon-g-min::before {
+  background-image: url('../images/portfolio/g-min.jpg');
+}
+
+.card-content.icon-h-min::before {
+  background-image: url('../images/portfolio/h-min.jpg');
+}
+
+.card-content.icon-i-min::before {
+  background-image: url('../images/portfolio/i-min.jpg');
+}
+
+.card-content.icon-a-min:hover:before {
+  content: 'Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.';
+  font-size: 18px;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+  color: #FFFFFF;
+  padding: 20px;
+  linear-gradient( to right, rgba(47, 48, 58, 0.8),rgba(47, 48, 58, 0.8)),
+  url(../images/main_foto.jpg);
+}
+
+.card-title {
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  text-align: left;
+  padding-left: 24px;
+  padding-top: 20px;
+}
+
+.card-discr {  
+  line-height: 1.7;
+  text-align: left;
+  padding-left: 24px;
+  padding-top: 4px;
+  padding-bottom: 20px;
+}
+
+.card:nth-child(3n) {
+  margin-right: 0px;
+}
+
+.card:nth-child(3n-2) {
+  margin-left: 15px;
+}
+
+.card:nth-child(n + 4) {
+margin-top: 30px;
+}
+
+
+
+/* ========================== */
