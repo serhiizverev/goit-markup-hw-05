@@ -201,20 +201,28 @@ h1 {
   border-radius: 4px;
 }
 
-/* Преимущества features------*/
+/* Преимущества 
+features------*/
+
+.features {
+  padding: 94px 15px;
+}
 
 .features .conteiner {
   position: relative;
-  padding: 94px 15px;
+  background-color: blueviolet;
 }
 
 .features .conteiner::after {
   position: absolute;
   content: '';
   display: block;
+  width: 1170px;
   height: 1px;
-  bottom: 0 ;
-  left: 0;
+  width: (100% - 30px);
+  bottom: 0;
+  /*left: 50%;
+  transform: translate(-50%, -50%); */
   background-color: #ECECEC;
 }
 

@@ -6,17 +6,17 @@
   margin-left: auto;
 }
 
-.filtrs-batton {
+.filtrs-batton-list {
   display: flex;
   padding-top: 94px;
   justify-content: center;
 }
 
-.list-portfolio {
+.portfolio-batton-item {
   margin-right: 8px;
 }
 
-.link-portfolio {
+.portfolio-batton-link {
   font-weight: 500;
   line-height: 1.6;
   padding: 6px 22px;
@@ -24,19 +24,19 @@
   border-radius: 4px;
 }
 
-.list-portfolio:last-child {
+.portfolio-batton-item:last-child {
   margin-right: 0;
 }
 
-/* projeck-conteiner =====++======== */
+/* card-list projeck-conteiner =====++======== */
 
-.projeck-conteiner {
+.card-list {
   display: flex;
   flex-wrap: wrap;
   margin-top: 50px;
 }
 
-.card {
+.card-item {
   display: block;
   width: 370px;
   margin-right: 30px;
@@ -44,25 +44,62 @@
   overflow: hidden;
 }
 
-.card-img {
-  display: block;
+.card-item:nth-child(3n) {
+  margin-right: 0px;
 }
 
-.card-content {
+.card-item:nth-child(3n-2) {
+  margin-left: 15px;
+}
+
+.card-item:nth-child(n + 4) {
+margin-top: 30px;
+}
+
+.card-link {
+  position: relative;
+  display: block;
   border: 1px solid #eeeeee;
   border-top-width: 0px;
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
 }
 
+.card-hover-content {
+  position: absolute;
+  display: block;
+  width: 370px;
+  height: 404px; /* размер блока на всю длину контейнера ссылки */
+  opacity: 0;
+}
+
+.card-hover-content:hover {
+  position: absolute;
+  display: block;
+  width: 370px;
+  height: 294px;
+  top: 0px;
+  left: 0px;
+  padding: 63px 24px;
+  font-size: 18px;
+  line-height: 1.6;
+  color: white;
+  overflow: auto;
+  background-color: rgba(33, 150, 243, 0.9);
+  opacity: 1;
+}
+
 .card-content::before {
   content: '';
   display: block;
-  width: auto;
+  width: 100%;
   height: 294px;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 370px 294px;
+}
+
+.card-content.icon-a-min::before {
+  background-image: url('../images/portfolio/i-min.jpg');
 }
 
 .card-content.icon-i-min::before {
@@ -81,10 +118,6 @@
   background-image: url('../images/portfolio/d-min.jpg');
 }
 
-.card-content::before {
-  background-image: url('../images/portfolio/i-min.jpg');
-}
-
 .card-content.icon-f-min::before {
   background-image: url('../images/portfolio/f-min.jpg');
 }
@@ -99,17 +132,6 @@
 
 .card-content.icon-i-min::before {
   background-image: url('../images/portfolio/i-min.jpg');
-}
-
-.card-content.icon-a-min:hover:before {
-  content: 'Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.';
-  font-size: 18px;
-  line-height: 1.6;
-  letter-spacing: 0.03em;
-  color: #FFFFFF;
-  padding: 20px;
-  linear-gradient( to right, rgba(47, 48, 58, 0.8),rgba(47, 48, 58, 0.8)),
-  url(../images/main_foto.jpg);
 }
 
 .card-title {
@@ -128,19 +150,5 @@
   padding-top: 4px;
   padding-bottom: 20px;
 }
-
-.card:nth-child(3n) {
-  margin-right: 0px;
-}
-
-.card:nth-child(3n-2) {
-  margin-left: 15px;
-}
-
-.card:nth-child(n + 4) {
-margin-top: 30px;
-}
-
-
 
 /* ========================== */
