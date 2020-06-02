@@ -210,7 +210,6 @@ features------*/
 
 .features .conteiner {
   position: relative;
-  background-color: blueviolet;
 }
 
 .features .conteiner::after {
@@ -220,7 +219,7 @@ features------*/
   width: 1170px;
   height: 1px;
   width: (100% - 30px);
-  bottom: 0;
+  bottom: -94px;
   /*left: 50%;
   transform: translate(-50%, -50%); */
   background-color: #ECECEC;
@@ -276,16 +275,16 @@ features------*/
   margin-bottom: 50px;
 }
 
-.block-doing > ul {
+.doing-list {
   display: flex;
 }
 
-.block-doing-txt {
+.doing-item {
   display: block;
   margin-right: 30px;
 }
 
-.block-doing-txt:last-child {
+.doing-item:last-child {
   margin-right: 0px;
 }
 
