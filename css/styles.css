@@ -15,7 +15,7 @@ body {
   font-style: normal;
   letter-spacing: 0.03em;
   margin: 0px;
-  padding: 0px;
+  padding: 80px 0 0 0;
 }
 
 img {
@@ -44,7 +44,7 @@ h2 {
 }
  
 .conteiner {
-  width: 1200px;
+  width: 1170px;
   margin-left: auto;
   margin-right: auto;
   padding: 0 15px;
@@ -61,14 +61,23 @@ h2 {
   }  /*данный блок не отображается в браузере, но учавствует в потоке*/
   
 /* header-conteiner ===================*/
+.header-nav {
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 40px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+}
+
 .header-nav .conteiner {
   display: flex;
   align-items: center;
-  font-weight: 500;
   letter-spacing: 0.02em;
 }
 
-.header-nav.portfolio-nav {
+.portfolio-nav {
   outline: 1px solid #ECECEC;
 }  /* это нижнее подчеркивание всего блока навигации*/
 
@@ -87,7 +96,7 @@ h2 {
 
 .nav-link {
   display: block;
-  padding: 31px 0;
+  padding: 32px 0;
 }
 
 /* нижнее подчеркивание
@@ -225,6 +234,7 @@ features------*/
 }
 
 .features h3 {
+  font-size: 14px;
   font-weight: 700;
   text-transform: uppercase;
   margin-top: 30px;
@@ -241,14 +251,14 @@ features------*/
   padding: 0;
 }
 
-.features-item:not(:last-child) {
-  margin-right: 30px;
-}
-
 .features-item {
   padding: 0;
   display: block;
   width: 270px;
+}
+
+.features-item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .features-icon-block {
@@ -351,10 +361,10 @@ features------*/
   margin-right: 0px;
 }
 
-.img-comand {
+/* .img-comand {
   display: block;
   width: 270px;
-}
+} */
 
 .command h2 {
   padding-top: 94px;
@@ -364,18 +374,20 @@ features------*/
 .command h3 {
   font-size: 16px;
   text-align: center;
-  margin-top: 28px;
+  margin-top: 30px;
+  line-height: 1.3;
   color: var(--head-and-subhead-color);
 }
 
 .command p {
   text-align: center;
+  line-height: 1.3;
   margin-top: 10px;
 }
 
 .command-soc-list {
   display: flex;
-  margin-top: 15px;
+  margin-top: 16px;
   margin-bottom: 24px;
   justify-content: center;
 }
