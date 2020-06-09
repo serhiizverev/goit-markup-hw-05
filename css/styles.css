@@ -100,6 +100,15 @@ h2 {
 .nav-link {
   display: block;
   padding: 31px 0;
+  color: var(--head-and-subhead-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav-link:focus,
+.nav-link:hover,
+.nav-link:active {
+  /* transform: translate; */
+  color: var(--accent-color);
 }
 
 /* нижнее подчеркивание
@@ -138,8 +147,9 @@ h2 {
 .icon-header {
   display: inline-flex;
   margin-right: 10px;
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
+  /* background-color: chartreuse; */
   justify-content: center;
   align-items: center;
 }
@@ -149,25 +159,15 @@ h2 {
   align-items: center;
   color: var(--head-and-subhead-color);
   fill: var(--head-and-subhead-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contacts-link:hover {
-  color: var(--accent-color);
-  fill: var(--accent-color)
-}
-
+.contacts-link:hover,
 .contacts-link:active,
 .contacts-link:focus {
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   color: var(--accent-color);
-  fill: var(--accent-color)
-}
-
-/* == */
-
-.img-box-nav {
-  display: inline-block;
-  margin-right: 10px;
-  vertical-align: middle;
+  fill: var(--accent-color);
 }
 
 /* hero ============================ */
@@ -209,6 +209,7 @@ h1 {
   padding: 14px 20px 14px 20px;
   outline: 2px solid transparent;
   border-radius: 4px;
+  cursor: pointer;  
 }
 
 /* Преимущества features------*/
@@ -403,19 +404,19 @@ h1 {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  background-color: none;
+  background-color: inherit;
   fill: var(--icons-color);
-}
-.command-soc-link:hover {
-  background-color: var(--accent-color);
-  fill: var(--background-text-footer);
-}
-.command-soc-link:active,
-.command-soc-link:focus {
-  background-color: var(--accent-color);
-  fill: var(--background-text-footer);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+
+.command-soc-link:active,
+.command-soc-link:hover,
+.command-soc-link:focus {
+  transform: translate;
+  background-color: var(--accent-color);
+  fill: var(--background-text-footer);
+}
 
 /* Наши клиенты +++++++ */
 .clients h2 {
@@ -436,29 +437,19 @@ h1 {
   width: 170px;
   height: 90px;
   border: 1px solid var(--icons-color);
-  fill: var(--icons-color);
   border-radius: 4px;
   justify-content: center;
   align-items: center;
+  fill: var(--icons-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.clients-link:hover{
-  fill: var(--accent-color);
-  border: 1px solid var(--accent-color);
-}
-
+.clients-link:hover,
 .clients-link:active,
 .clients-link:focus {
-  fill: var(--accent-color);
+  transform: translate;
   border: 1px solid var(--accent-color);
-}
-
-.clients-icon{
-  fill: inherit;
-}
-
-.clients-icon:hover{
- fill: var(--accent-color);
+  fill: var(--accent-color);
 }
 
 /* footer ---------------- */
@@ -472,7 +463,6 @@ footer {
   align-items: baseline;
   padding-top: 48px;
   padding-bottom: 18px;
-  /* border-bottom: 1px solid rgba(255, 255, 255, 0.1); */
 }
 
 .footer-address .logo {
@@ -502,6 +492,14 @@ button-sprite */
   border-radius: 50%;
   fill: #FFFFFF;
   background-color: rgba(255, 255, 255, 0.1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-cammon-link:active,
+.footer-cammon-link:focus,
+.footer-cammon-link:hover {
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: var(--accent-color);
 }
 
 /* footer buton send form ++++

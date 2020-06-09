@@ -43,10 +43,9 @@ color: black
 .nav-link {
   color: var(--head-and-subhead-color);
 }
-.nav-link:hover {
-  color: var(--accent-color);
-}
+ 
 .nav-link:focus,
+.nav-link:hover,
 .nav-link:active {
   color: var(--accent-color);
 }
@@ -54,6 +53,14 @@ color: black
 .button-hero {
   color: var(--background-text-footer);
   background-color: var(--accent-color);
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button-hero:hover,
+.button-hero:focus {
+  background-color: var(--icons-color);
 }
 
 h1 { 
@@ -123,10 +130,8 @@ footer .developed {
 }
 
 .subscribe .button:hover,
-.subscribe .button:focus,
-.button-hero:hover,
-.button-hero:focus {
-  opacity: 0.9;
+.subscribe .button:focus {
+  background-color: var(--icons-color);
 }
 
 .projeck-item:hover {
@@ -142,13 +147,4 @@ footer .developed {
 .subscribe-box-button:focus,
 .subscribe-box-button:active {
   opacity: 0.9;
-}
-
-.footer-cammon-link:hover {
-  background-color: var(--accent-color);
-}
-
-.footer-cammon-link:active,
-.footer-cammon-link:focus {
-  background-color: var(--accent-color);
 }
