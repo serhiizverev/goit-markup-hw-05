@@ -99,20 +99,20 @@ footer .developed {
 }
 
 /*  стили цвета в портфолио */
-.link-portfolio {
+.button-link {
   color: var(--head-and-subhead-color);
   background-color: var(--background-color-command);
 }
 
-.link-portfolio:hover,
-.link-portfolio:focus {
+.button-link:hover,
+.button-link:focus {
   color: var(--background-text-footer);
   background-color: var(--accent-color);
   transition: all 0.2s;
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 3px 1px rgba(0, 0, 0, 0.1);
 }
 
-.link-portfolio:active {
+.button-link:active {
   color: var(--head-and-subhead-color);
   background-color: var(--paragraf-color);
 }
@@ -129,7 +129,7 @@ footer .developed {
   opacity: 0.9;
 }
 
-.projeck-conteiner .card:hover {
+.projeck-item:hover {
   box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
 }
 
