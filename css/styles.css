@@ -209,7 +209,18 @@ h1 {
   padding: 14px 20px 14px 20px;
   outline: 2px solid transparent;
   border-radius: 4px;
-  cursor: pointer;  
+  cursor: pointer; 
+  color: var(--background-text-footer);
+  background-color: var(--accent-color);
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.button-hero:hover,
+.button-hero:focus {
+  background-color: var(--icons-color);
 }
 
 /* Преимущества features------*/

@@ -40,16 +40,6 @@ color: black
 /* 
  */
 
-.nav-link {
-  color: var(--head-and-subhead-color);
-}
- 
-.nav-link:focus,
-.nav-link:hover,
-.nav-link:active {
-  color: var(--accent-color);
-}
-
 .button-hero {
   color: var(--background-text-footer);
   background-color: var(--accent-color);
