@@ -63,61 +63,29 @@ margin-top: 30px;
   border-bottom-left-radius: 5px;
 }
 
-.card-content::before {
-  content: '';
+.projeck-item {
+  position: relative;
   display: block;
-  width: auto;
+}
+
+.card-overlay {
+  position: absolute;
+  display: block;
+  width: 370px;
   height: 294px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 370px 294px;
-}
-
-.card-content.icon-i-min::before {
-  background-image: url('../images/portfolio/a-min.jpg');
-}
-
-.card-content.icon-b-min::before {
-  background-image: url('../images/portfolio/b-min.jpg');
-}
-
-.card-content.icon-c-min::before {
-  background-image: url('../images/portfolio/c-min.jpg');
-}
-
-.card-content.icon-d-min::before {
-  background-image: url('../images/portfolio/d-min.jpg');
-}
-
-.card-content::before {
-  background-image: url('../images/portfolio/i-min.jpg');
-}
-
-.card-content.icon-f-min::before {
-  background-image: url('../images/portfolio/f-min.jpg');
-}
-
-.card-content.icon-g-min::before {
-  background-image: url('../images/portfolio/g-min.jpg');
-}
-
-.card-content.icon-h-min::before {
-  background-image: url('../images/portfolio/h-min.jpg');
-}
-
-.card-content.icon-i-min::before {
-  background-image: url('../images/portfolio/i-min.jpg');
-}
-
-.card-content.icon-a-min:hover:before {
-  content: 'Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.';
+  padding: 63px 24px;
+  overflow: auto;
   font-size: 18px;
   line-height: 1.6;
   letter-spacing: 0.03em;
   color: #FFFFFF;
-  padding: 20px;
-  linear-gradient( to right, rgba(47, 48, 58, 0.8),rgba(47, 48, 58, 0.8)),
-  url(../images/main_foto.jpg);
+  background: rgba(33, 150, 243, 0.9);
+  z-index: 1;
+  opacity: 0;
+}
+
+.projeck-item .card-overlay:hover {
+  opacity: 1;
 }
 
 .card-title {
@@ -138,3 +106,61 @@ margin-top: 30px;
 }
 
 /* ========================== */
+
+
+/* .card-content::before {
+  content: '';
+  display: block;
+  width: auto;
+  height: 294px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 370px 294px;
+} */
+
+/* .card-content.icon-a-min::before {
+  background-image: url('../images/portfolio/a-min.jpg');
+} */
+
+/* .card-content.icon-b-min::before {
+  background-image: url('../images/portfolio/b-min.jpg');
+}
+
+.card-content.icon-c-min::before {
+  background-image: url('../images/portfolio/c-min.jpg');
+}
+
+.card-content.icon-d-min::before {
+  background-image: url('../images/portfolio/d-min.jpg');
+}
+
+.card-content.icon-e-min::before {
+  background-image: url('../images/portfolio/e-min.jpg');
+}
+
+.card-content.icon-f-min::before {
+  background-image: url('../images/portfolio/f-min.jpg');
+}
+
+.card-content.icon-g-min::before {
+  background-image: url('../images/portfolio/g-min.jpg');
+}
+
+.card-content.icon-h-min::before {
+  background-image: url('../images/portfolio/h-min.jpg');
+}
+
+.card-content.icon-i-min::before {
+  background-image: url('../images/portfolio/i-min.jpg');
+} */
+
+/* .card-content.icon-a-min:hover:before {
+  content: 'Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.';
+  font-size: 18px;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+  color: #FFFFFF;
+  padding: 20px;
+  linear-gradient( to right, rgba(47, 48, 58, 0.8),rgba(47, 48, 58, 0.8)),
+  url(../images/main_foto.jpg);
+} */
