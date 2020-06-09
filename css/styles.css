@@ -15,7 +15,7 @@ body {
   font-style: normal;
   letter-spacing: 0.03em;
   margin: 0px;
-  padding: 0px;
+  padding: 80px 0 0 0;
 }
 
 img {
@@ -61,6 +61,16 @@ h2 {
   }  /*данный блок не отображается в браузере, но учавствует в потоке*/
   
 /* header-conteiner ===================*/
+
+.header-nav {
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.96);
+  z-index: 1;
+}
+
 .header-nav .conteiner {
   display: flex;
   align-items: center;
@@ -71,7 +81,7 @@ h2 {
 }
 
 .header-nav {
-  outline: 1px solid #ECECEC;
+  /* outline: 1px solid #ECECEC; */
 }  /* это нижнее подчеркивание всего блока навигации*/
 
 .logo {
@@ -205,7 +215,7 @@ h1 {
 
 .features .conteiner {
   position: relative;
-  padding: 94px 0;
+  padding: 94px 15px;
 }
 
 .features .conteiner::after {
@@ -312,7 +322,7 @@ h1 {
 .command-box {
   display: block;
   width: 270px;
-  margin-right: 29px;
+  margin-right: 30px;
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
   overflow: hidden;
@@ -602,6 +612,6 @@ input[type=text] {
   width: calc(100% - 30px);
   height: 1px;
   bottom: 0 ;
-  left: 15px;
+  /* left: 15px; */
   background-color: rgba(255, 255, 255, 0.1);
 }

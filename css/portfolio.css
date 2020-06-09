@@ -1,4 +1,7 @@
 /* PORTFOLIO page */
+.nav-portfolio {
+  border-bottom: 1px solid #ECECEC;
+}
 
 .conteiner-portfolio {
   width: 1200px;
