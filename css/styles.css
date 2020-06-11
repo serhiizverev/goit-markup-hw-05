@@ -60,6 +60,134 @@ h2 {
   clip: rect(0 0 0 0);
   }  /*данный блок не отображается в браузере, но учавствует в потоке*/
   
+
+
+/*  colors site */
+:root {
+  --head-and-subhead-color: #212121;
+  --paragraf-color: #757575;
+  --accent-color: #2196F3;
+  --icons-color: #AFB1B8;
+  --background-color-footer: #2F303A;
+  --background-text-footer: #ffffff;
+  --background-color-command: #F5F4FA;
+}
+
+body {
+  color: var(--head-and-subhead-color);
+}
+
+/* Фон контейнера команда */
+.command {
+  background-color: var(--background-color-command);
+}
+
+/* +++++++++++++++++++++++ */
+
+.link,
+.card-title {
+  color: var(--head-and-subhead-color);
+}
+
+/* Цветовое оформление ЛОГОТИПА */
+.logo {
+  color: var(--accent-color);
+  }
+  
+.logo-white {
+  color: white;
+}
+
+.logo-black {
+color: black
+}
+
+h1 { 
+  color: var(--background-text-footer);
+}
+
+.doing-txt {
+  color: var(--background-text-footer);
+  background: rgba(47, 48, 58, 0.8);
+}
+
+.logowite span,
+.link:focus, 
+.link:hover {
+  color: var(--accent-color);
+}
+
+.link:active {
+  color: white;
+}
+
+.mail-content,
+.tel-content,
+.card-discr {
+  color: var(--paragraf-color);
+}
+
+.footer-conteiner {
+  color: var(--background-text-footer);
+  background-color: var(--background-color-footer);
+}
+
+footer .developed {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.subscribe a { 
+  color: var(--background-text-footer);
+}
+
+.par-txt {
+  color: var(--paragraf-color)
+}
+
+/*  стили цвета в портфолио */
+.button-link {
+  color: var(--head-and-subhead-color);
+  background-color: var(--background-color-command);
+}
+
+.button-link:hover,
+.button-link:focus {
+  color: var(--background-text-footer);
+  background-color: var(--accent-color);
+  transition: all 0.2s;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 3px 1px rgba(0, 0, 0, 0.1);
+}
+
+.button-link:active {
+  color: var(--head-and-subhead-color);
+  background-color: var(--paragraf-color);
+}
+
+.subscribe .button {
+  color: var(--background-text-footer);
+  background-color: var(--accent-color);
+}
+
+.subscribe .button:hover,
+.subscribe .button:focus {
+  background-color: var(--icons-color);
+}
+
+.projeck-item:hover {
+  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
+}
+
+.subscribe-box-button {
+  color: var(--background-text-footer);
+  background-color: var(--accent-color);
+}
+
+.subscribe-box-button:hover,
+.subscribe-box-button:focus,
+.subscribe-box-button:active {
+  opacity: 0.9;
+}
+
 /* header-conteiner ===================*/
 
 .header-nav {
@@ -79,10 +207,6 @@ h2 {
   line-height: 1.3;
   letter-spacing: 0.02em;
 }
-
-.header-nav {
-  /* outline: 1px solid #ECECEC; */
-}  /* это нижнее подчеркивание всего блока навигации*/
 
 .logo {
   display: block;
@@ -107,17 +231,18 @@ h2 {
 .nav-link:focus,
 .nav-link:hover,
 .nav-link:active {
-  /* transform: translate; */
   color: var(--accent-color);
+}
+
+.nav-link.activ {
+  position: relative;
+  color: var(--accent-color);
+  
 }
 
 /* нижнее подчеркивание
  в навигации */
-.nav-list .activ {
-  position: relative;
-}
-
-.nav-list .activ::before {
+.nav-link.activ::before {
   content: '';
   position: absolute;
   display: block;
@@ -149,7 +274,6 @@ h2 {
   margin-right: 10px;
   width: 30px;
   height: 30px;
-  /* background-color: chartreuse; */
   justify-content: center;
   align-items: center;
 }
@@ -157,15 +281,16 @@ h2 {
 .contacts-link {
   display: flex;
   align-items: center;
-  color: var(--head-and-subhead-color);
   fill: var(--head-and-subhead-color);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  color: var(--head-and-subhead-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 1250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts-link:hover,
 .contacts-link:active,
 .contacts-link:focus {
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 1250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   color: var(--accent-color);
   fill: var(--accent-color);
 }
@@ -215,7 +340,6 @@ h1 {
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
 }
 
 .button-hero:hover,
@@ -624,3 +748,128 @@ input[type=text] {
   /* left: 15px; */
   background-color: rgba(255, 255, 255, 0.1);
 }
+
+
+/* ===========================
+
+         portfolio page
+
++++++++++++++++++++++++++++++*/
+/* PORTFOLIO page */
+.nav-portfolio {
+  border-bottom: 1px solid #ECECEC;
+}
+
+.portfolio-conteiner {
+  width: 1170px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.button-list {
+  display: flex;
+  padding-top: 94px;
+  justify-content: center;
+}
+
+.button-link {
+  font-weight: 500;
+  line-height: 1.6;
+  padding: 6px 22px;
+  margin-right: 8px;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+.button-item:last-child {
+  margin-right: 0;
+}
+
+/* projeck-list =====++======== */
+
+.projeck-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+.projeck-item {
+  display: block;
+  width: 370px;
+  margin-right: 30px;
+  border-radius: 5px;
+  overflow: hidden;
+  border: 1px solid #eeeeee;
+  border-top-width: 0px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.projeck-item:nth-child(3n) {
+  margin-right: 0px;
+}
+
+.projeck-item:nth-child(n + 4) {
+margin-top: 30px;
+}
+
+.card-content {  
+  position: relative;
+}
+
+.card-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 370px;
+  height: 100%;
+  padding-top: 63px;
+  padding-right: 24px;
+  padding-bottom: 63px;
+  padding-left: 24px;
+
+  background-color: rgba(33, 150, 243, 0.9);
+  transform: translateY(100%);
+  opacity: 0;
+  transition: transform 1250ms var(--accent-color), 
+    opacity 1250ms var(--accent-color);
+}
+
+.card-overlay-text {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.6;
+  color: var(--background-text-footer);
+}
+
+.card-link:hover .card-overlay,
+.card-link:focus .card-overlay {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.card-img {
+  display: block;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+.card-title {
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  text-align: left;
+  padding-left: 24px;
+  padding-top: 20px;
+}
+
+.card-discr {  
+  line-height: 1.7;
+  text-align: left;
+  padding-left: 24px;
+  padding-top: 4px;
+  padding-bottom: 20px;
+}
+
+/* ========================== */
