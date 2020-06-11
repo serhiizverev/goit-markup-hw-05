@@ -62,7 +62,8 @@ h2 {
   
 
 
-/*  colors site */
+/*  colors site =================
+основные параметры цвета для сайта */
 :root {
   --head-and-subhead-color: #212121;
   --paragraf-color: #757575;
