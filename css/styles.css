@@ -282,15 +282,14 @@ footer .developed {
   display: flex;
   align-items: center;
   fill: var(--head-and-subhead-color);
-
   color: var(--head-and-subhead-color);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 1250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts-link:hover,
 .contacts-link:active,
 .contacts-link:focus {
-  transition: transform 1250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   color: var(--accent-color);
   fill: var(--accent-color);
 }
@@ -576,7 +575,7 @@ h1 {
   justify-content: center;
   align-items: center;
   fill: var(--icons-color);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-link:hover,
@@ -619,7 +618,7 @@ button-sprite */
 /* icons svg soc-links footer +++++++ */
 /* .soc-links  
  цвета иконок на социальные сети */
- .footer-cammon-link {
+ .footer-cammon-icon {
   display: block;
   padding: 0;
   width: 44px;
@@ -630,10 +629,10 @@ button-sprite */
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-cammon-link:active,
-.footer-cammon-link:focus,
-.footer-cammon-link:hover {
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+.footer-cammon-link:active ,
+.footer-cammon-icon:focus,
+.footer-cammon-icon:hover {
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background-color: var(--accent-color);
 }
 
@@ -815,6 +814,7 @@ margin-top: 30px;
 
 .card-content {  
   position: relative;
+  overflow: hidden;
 }
 
 .card-overlay {
